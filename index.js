@@ -15,7 +15,7 @@ const port = process.env.PORT || 4000;
 
 // ⭐ IMPORTANT: ENABLE CREDENTIALS FOR CLERK COOKIE SESSION
 app.use(cors({
-    origin: "https://invoicefrontend-psi.vercel.app/", // change to frontend URL in production
+    origin: "https://invoicefrontend-psi.vercel.app", // change to frontend URL in production
     credentials: true
 }));
 
