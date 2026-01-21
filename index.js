@@ -15,7 +15,7 @@ const port = process.env.PORT || 4000;
 
 // ⭐ IMPORTANT: ENABLE CREDENTIALS FOR CLERK COOKIE SESSION
 app.use(cors({
-    origin: "http://localhost:5173",     // change to frontend URL in production
+    origin: "https://invoicefrontend-psi.vercel.app/", // change to frontend URL in production
     credentials: true
 }));
 
@@ -37,7 +37,7 @@ app.use("/api/ai", aiInvoiceRouter);
 
 // Test route
 app.get('/', (req, res) => {
-    res.send('API Working with Clerk Auth');
+    res.send('api Working with Clerk Auth');
 });
 
 app.listen(port, () => {
